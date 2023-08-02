@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/bookmark.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+      <header class="m-auto position-relative ">
+        <h1 class="text-center my-5 position-sticky z-1">Bookmarker</h1>
+       <div class="head-contain z-0 "></div>
+      </header> 
+      <div class="border-dotted pt-5"></div>
+      <section class="mt-4 d-flex align-content-center justify-content-center" >
+       <div class="sec-head">
+        <h2><span><i class="fa-solid fa-bookmark"></i></span> Bookmark your favorite sites <span><i class="fa-solid fa-bookmark"></i></span></h2>
+       </div>
+      </section>
+      <section class="linkform mt-5">
+        <Label class="pb-2" for="bookmark-name"> <span><i class="fa-solid fa-book-bookmark pe-2 "></i></span> <b>Site Name</b></Label>
+        <input type="text" id="bookmark-name" placeholder="Bookmark Name" class="form-control  ">
+
+        <Label class="pb-2 mt-4" for="url"> <span><i class="fa-solid fa-link pe-2 "></i></span><b> Site URL</b></Label>
+        <input type="text" id="url" placeholder="Website URL" class="form-control ">
+
+       <div class="form-button mt-4 d-flex align-content-center justify-content-center ">
+        <button type="button" onclick="addSite()" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-danger ps-5 pe-5 bb  ">Submit</button>
+       </div>
+      </section>
+    
+      <div class="border-dotted pt-5"></div>
+      <table class="table mt-4 text-center bg-light  ">
+        <thead class=>
+            <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+            
+        </tbody>
+    </table>
+
+
+    
+    </div>
+<div class="modal-site " id="modal">
+
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+ 
+</div>
+   
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
